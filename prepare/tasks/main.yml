@@ -1,0 +1,13 @@
+---
+
+- name: "update apt " 
+  become: true
+  become_methode: sudo
+  apt:
+    update_cache : yes
+  
+- name: "auto remove" 
+  become: true
+  apt:
+    autoremove : yes
+  
